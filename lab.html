@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Job Application</h2>
+    <p>Join our team and build your career with us</p>
+    <form id="jobForm">
+      <label>Full Name *</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
+
+      <label>Email Address *</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label>Phone Number *</label>
+      <input type="text" id="phone" placeholder="Enter your phone number" required />
+
+      <label>Create Account Password *</label>
+      <input type="password" id="password" placeholder="Create a password" required />
+
+      <label>Experience Level *</label>
+      <select id="experience" required>
+        <option value="">Select your experience level</option>
+        <option>Entry Level (0-2 years)</option>
+        <option>Mid Level (3-5 years)</option>
+        <option>Senior Level (6-10 years)</option>
+        <option>Executive (10+ years)</option>
+      </select>
+
+      <label>Expected Salary (Annual) *</label>
+      <input type="number" id="salary" placeholder="e.g. 50000" required />
+
+      <label class="checkbox">
+        <input type="checkbox" id="terms" />
+         <label for="terms">I agree to the Terms & Conditions and Privacy Policy *</label>
+      </label>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+</html>
+
